@@ -1,17 +1,22 @@
 $(document).ready(function () {
-    $('.tab').click(function () {
-        var tabNumber = $(this).data('tab');
+    $('.tablinks').on('click', function () {
+        var tabId = $(this).data('tab');
+        $('.tabcontent').hide();
+        $('#' + tabId).show();
 
-        $('.tab-content .content').removeClass('active');
-
-        $('.tab-content .content[data-tab="' + tabNumber + '"]').addClass('active');
-
-        $('.tabs .tab').removeClass('active');
-
-        $(this).addClass('active');
+        // Изменение фона сайта при переключении табов
+        var backgroundImages = {
+            'tab1': './assets/img/1.png',
+            'tab2': './assets/img/2.png',
+            'tab3': './assets/img/3.png',
+            'tab4': './assets/img/4.png',
+            'tab5': './assets/img/5.png',
+            'tab6': './assets/img/6.png',
+            'tab7': './assets/img/7.png'
+        };
+        $('body').css('background-image', 'url("' + backgroundImages[tabId] + '")');
     });
 
-    $('.tab-content .content[data-tab="1"]').addClass('active');
-
-    $('.tabs .tab[data-tab="1"]').addClass('active');
+    // По умолчанию показываем первый таб и его содержимое
+    $('.tablinks:first').trigger('click');
 });

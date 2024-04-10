@@ -3,43 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Табы</title>
-        <link rel="stylesheet" href="./assets/scss/main.css">
+        <title>Табы с изменением фона</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
         <div class="tabs">
-            <div class="tab" data-tab="1">Таб 1</div>
-            <div class="tab" data-tab="2">Таб 2</div>
-            <div class="tab" data-tab="3">Таб 3</div>
-            <div class="tab" data-tab="4">Таб 4</div>
-            <div class="tab" data-tab="5">Таб 5</div>
-            <div class="tab" data-tab="6">Таб 6</div>
-            <div class="tab" data-tab="7">Таб 7</div>
+            <button class="tablinks" data-tab="tab1">ТРЦ MEGA Park</button>
+            <button class="tablinks" data-tab="tab2">ТРЦ Forum</button>
+            <button class="tablinks" data-tab="tab3">ТРЦ Mega Center</button>
+            <button class="tablinks" data-tab="tab4">ТРЦ MEGA Park 2</button>
+            <button class="tablinks" data-tab="tab5">ТРЦ Sputnik Mall</button>
+            <button class="tablinks" data-tab="tab6">ТРЦ Mega Center
+                Alma-Ata</button>
+            <button class="tablinks" data-tab="tab7">ТРЦ Aport Mall</button>
         </div>
-        <div class="tab-content" id="tab-content">
-            <div class="content" data-tab="1"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201735.96179537668!2d-73.97968108088914!3d40.69714942220955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1649453848901!5m2!1sen!2s"
-                    allowfullscreen></iframe></div>
-            <div class="content" data-tab="2"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23746.451846228425!2d2.3522226500000002!3d48.856614000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1649453910326!5m2!1sen!2sus"
-                    allowfullscreen></iframe></div>
-            <div class="content" data-tab="3"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24859.144161280168!2d-0.12775829999999796!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce2c8d8a49%3A0x5d4e9e7b9b8e597b!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1649453935499!5m2!1sen!2sus"
-                    allowfullscreen></iframe></div>
-            <div class="content" data-tab="4"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198722.98852490697!2d-117.16108379481127!3d32.71573887508632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e5d%3A0x5a79d8e649b8f8f7!2sSan%20Diego%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1649453959731!5m2!1sen!2s"
-                    allowfullscreen></iframe></div>
-            <div class="content" data-tab="5"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49182.93655247092!2d-118.24368498031371!3d34.05223421184603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdfc9c06d7c72!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1649453982467!5m2!1sen!2sus"
-                    allowfullscreen></iframe></div>
-            <div class="content" data-tab="6"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29062.07038021386!2d139.69170630000002!3d35.6894875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b30d3050b8b%3A0x52d8ca68ac1950ff!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sus!4v1649454007172!5m2!1sen!2sus"
-                    allowfullscreen></iframe></div>
-            <div class="content" data-tab="7"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27617.49524015471!2d126.97829129999999!3d37.566535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca0e17d27d5e9%3A0xf3f4aa4d60f0f9d!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2sus!4v1649454035685!5m2!1sen!2sus"
-                    allowfullscreen></iframe></div>
+
+        <div class="tab-content">
+            <div id="tab1" class="tabcontent">
+                <h3>ТРЦ MEGA Park</h3>
+            </div>
+
+            <div id="tab2" class="tabcontent">
+                <h3>ТРЦ Forum</h3>
+            </div>
+
+            <div id="tab3" class="tabcontent">
+                <h3>ТРЦ Mega Center</h3>
+            </div>
+
+            <div id="tab4" class="tabcontent">
+                <h3>ТРЦ MEGA Park 2</h3>
+            </div>
+
+            <div id="tab5" class="tabcontent">
+                <h3>ТРЦ Sputnik Mall</h3>
+            </div>
+
+            <div id="tab6" class="tabcontent">
+                <h3>ТРЦ Mega Center Alma-Ata</h3>
+            </div>
+
+            <div id="tab7" class="tabcontent">
+                <h3>ТРЦ Aport Mall</h3>
+            </div>
         </div>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
+А
