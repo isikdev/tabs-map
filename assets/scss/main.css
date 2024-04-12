@@ -1,44 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-size: cover;
-  background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 10px;
+    margin: 50px;
+    max-width: 580px;
+    max-height: 400px;
+    position: relative;
 }
 
 .tabs {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
+    z-index: 1000;
+    max-width: 621px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs__wrapper {
+    overflow-x: hidden;
+    display: flex;
+    padding: 10px;
+    margin: 0;
 }
 
 .tablinks {
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  margin: 0 5px;
-  font-size: 16px;
-  color: #333;
-  transition: background-color 0.3s ease;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: #f0e4e4;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+    clip-path: polygon(18% 0%, 94% 0, 83% 100%, 7% 100%);
+    border: 0px none;
+    outline: 0px none;
+    color: #000;
+    padding: 20px 35px;
+    margin-left: -50px;
+    position: relative;
 }
 
-.tablinks:hover {
-  background-color: #ddd;
+.tablinks:first-child {
+    margin-left: 0;
+}
+
+.tablinks:last-child {
+    margin-right: -20px;
+}
+
+.tablinks.tablinks-active {
+    background-color: #333;
+    color: #fff;
+}
+
+.next-tab {
+    clip-path: polygon(18% 0%, 94% 0, 83% 100%, 0% 100%);
+    outline: none;
+    cursor: pointer;
+    font-size: 34px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 1000;
+}
+
+.tab-content {
+    top: 150px;
+    z-index: 10000;
+    padding: 0 50px;
 }
 
 .tabcontent {
-  position: relative;
-  top: 70px;
+    display: none;
+    font-family: "Montserrat", sans-serif;
 }
 
-.tabcontent {
-  display: none;
+.tabcontent p {
+    color: gray;
+    font-weight: 600;
+}
+
+.tabcontent h2 {
+    font-weight: 500;
 }
 
 .tabcontent h3 {
-  margin-top: 0;
-}/*# sourceMappingURL=main.css.map */
+    margin-top: 0;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        min-height: 100vh;
+        height: 100%;
+    }
+    .tabcontent h1 {
+        font-size: 18px;
+    }
+    .tabcontent h2 {
+        font-size: 12px;
+    }
+    .tablinks {
+        font-size: 12px;
+    }
+}
